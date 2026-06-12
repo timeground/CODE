@@ -1,0 +1,52 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--tg-statusbar-height);
+  padding: 0 8px;
+  background: var(--tg-focus);
+  color: #ffffff;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.statusbar-left,
+.statusbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.status-item.muted {
+  opacity: 0.75;
+}
+
+.status-item.path {
+  opacity: 0.85;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dirty-dot {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.status-panel-btn {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.status-panel-btn:hover,
+.status-panel-btn.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}

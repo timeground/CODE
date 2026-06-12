@@ -1,0 +1,34 @@
+{
+  "name": "@timeground/ide",
+  "version": "0.1.0",
+  "description": "TimeGround Code — AI-native code editor",
+  "author": "TimeGround LLP",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "vite build",
+    "start": "electron .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@timeground/agent-core": "workspace:*",
+    "@timeground/landing": "workspace:*",
+    "@timeground/ai-router": "workspace:*",
+    "@timeground/model-registry": "workspace:*",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vite-plugin-electron": "^0.28.8",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}

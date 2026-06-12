@@ -1,0 +1,23 @@
+{
+  "name": "timeground-ide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TimeGround Code — The AI-native code editor by TimeGround LLP",
+  "author": "TimeGround LLP <sales@timeground.in>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@timeground/ide",
+    "dev:web": "npm run dev --workspace=@timeground/web",
+    "build": "npm run build --workspaces --if-present",
+    "build:web": "npm run build --workspace=@timeground/web",
+    "start": "npm run start --workspace=@timeground/ide",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

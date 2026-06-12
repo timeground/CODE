@@ -1,0 +1,72 @@
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.tab-bar {
+  display: flex;
+  background: var(--tg-bg-primary);
+  border-bottom: 1px solid var(--tg-border-subtle);
+  overflow-x: auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 35px;
+  font-size: 13px;
+  color: var(--tg-text-muted);
+  border-right: 1px solid var(--tg-border-subtle);
+  cursor: pointer;
+  transition: background var(--tg-transition);
+  flex-shrink: 0;
+}
+
+.tab:hover {
+  background: var(--tg-bg-hover);
+  color: var(--tg-text-secondary);
+}
+
+.tab.active {
+  background: var(--tg-bg-deep);
+  color: var(--tg-text-primary);
+}
+
+.tab-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tab-dirty {
+  color: var(--tg-text-primary);
+  font-size: 10px;
+}
+
+.tab-close {
+  display: flex;
+  padding: 2px;
+  border-radius: 4px;
+  color: var(--tg-text-muted);
+  opacity: 0;
+  transition: opacity var(--tg-transition);
+}
+
+.tab:hover .tab-close,
+.tab.active .tab-close {
+  opacity: 1;
+}
+
+.tab-close:hover {
+  background: var(--tg-bg-active);
+  color: var(--tg-text-primary);
+}
+
+.editor-container {
+  flex: 1;
+  overflow: hidden;
+}

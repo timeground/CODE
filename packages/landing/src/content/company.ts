@@ -31,7 +31,7 @@ export const LINKS = {
   terms: "https://timeground.in/terms",
   security: "https://timeground.in/security",
   docs: "https://timeground.in/docs",
-  github: "https://github.com/timeground",
+  github: "https://github.com/timeground/CODE",
 } as const;
 
 /** Installer URLs — host these at timeground.in/download when releases ship */

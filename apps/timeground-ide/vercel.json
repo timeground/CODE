@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.com/vercel.json",
   "installCommand": "cd ../.. && pnpm install",
   "buildCommand": "cd ../.. && pnpm -w run build:web",
-  "outputDirectory": "dist",
+  "outputDirectory": "../timeground-web/dist",
   "framework": null
 }

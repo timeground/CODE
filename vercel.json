@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.com/vercel.json",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm run build:web",
+  "outputDirectory": "apps/timeground-web/dist",
+  "framework": null
+}
